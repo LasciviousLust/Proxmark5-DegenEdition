@@ -128,27 +128,63 @@ static void showBanner_logo(LogoMode mode) {
             PrintAndLogEx(NORMAL, "  " BANNERMSG2);
             break;
         }
-        case ANSI_PM5: {
-            PrintAndLogEx(NORMAL, "  " _CYAN_("8888888b.  888b     d888 888888888 "));
-            PrintAndLogEx(NORMAL, "  " _CYAN_("888   Y88b 8888b   d8888 888       "));
-            PrintAndLogEx(NORMAL, "  " _CYAN_("888    888 88888b.d88888 888       "));
-            PrintAndLogEx(NORMAL, "  " _CYAN_("888   d88P 888Y88888P888 8888888b. "));
-            PrintAndLogEx(NORMAL, "  " _CYAN_("8888888P\"  888 Y888P 888      \"Y88b"));
-            PrintAndLogEx(NORMAL, "  " _CYAN_("888        888  Y8P  888        888"));
-            PrintAndLogEx(NORMAL, "  " _CYAN_("888        888   \"   888 Y88b  d88P") " " BANNERMSG1);
-            PrintAndLogEx(NORMAL, "  " _CYAN_("888        888       888  \"Y8888P\" "));
+                case ANSI_PM5: {
+            PrintAndLogEx(NORMAL, "  " _PINK_("8888888b.  888b     d888 888888888  888     888  .d8888b.   .d8888b.  Y88b   d88P "));
+            PrintAndLogEx(NORMAL, "  " _PINK_("888   Y88b 8888b   d8888 888        888     888 d88P  Y88b d88P  Y88b  Y88b d88P  "));
+            PrintAndLogEx(NORMAL, "  " _PINK_("888    888 88888b.d88888 888        888     888 Y88b.      Y88b.        Y88o88P   "));
+            PrintAndLogEx(NORMAL, "  " _PINK_("888   d88P 888Y88888P888 8888888b.  888     888  \"Y888b.    \"Y888b.      Y888P    "));
+            PrintAndLogEx(NORMAL, "  " _PINK_("8888888P\"  888 Y888P 888      \"Y88b 888     888     \"Y88b.     \"Y88b.     888     "));
+            PrintAndLogEx(NORMAL, "  " _PINK_("888        888  Y8P  888        888 888     888       \"888       \"888     888     "));
+            PrintAndLogEx(NORMAL, "  " _PINK_("888        888   \"   888 Y88b  d88P Y88b. .d88P Y88b  d88P Y88b  d88P     888     ") " " BANNERMSG1);
+            PrintAndLogEx(NORMAL, "  " _PINK_("888        888       888  \"Y8888P\"   \"Y88888P\"   \"Y8888P\"   \"Y8888P\"      888     "));
+            PrintAndLogEx(NORMAL, "  " _GREEN_("                                                        :+:."));
+            PrintAndLogEx(NORMAL, "  " _GREEN_("                                                        :+-"));
+            PrintAndLogEx(NORMAL, "  " _GREEN_("                                                  :::::-+:"));
+            PrintAndLogEx(NORMAL, "  " _GREEN_("                                               .:=========."));
+            PrintAndLogEx(NORMAL, "  " _GREEN_("                                            .-============-."));
+            PrintAndLogEx(NORMAL, "  " _GREEN_("                                             :=***+========:"));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                                         :-*+++++===+*#==="));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                                     .-=*+++++++++**####:--"));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                                 --=*+++++++++++++*###*:"));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                            :-=**====++++++++++++*###*:"));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                         :-*++++*++++++++++++++*###*+:"));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                        -++===+++++++++++++++**###*+"));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                       :+===+++++++++++++++**###*+:"));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                       ++=++++++++++++++**####**="));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                       =**+++++++++++**####***="));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                       .#*###*****######***+:"));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                         +***#######****+="));
+            PrintAndLogEx(NORMAL, "  " _PURPLE_("                          .=+*******==:"));
             PrintAndLogEx(NORMAL, "  " BANNERMSG2);
             break;
         }
         case ASCII_PM5: {
-            PrintAndLogEx(NORMAL, "  8888888b.  888b     d888 888888888 ");
-            PrintAndLogEx(NORMAL, "  888   Y88b 8888b   d8888 888       ");
-            PrintAndLogEx(NORMAL, "  888    888 88888b.d88888 888       ");
-            PrintAndLogEx(NORMAL, "  888   d88P 888Y88888P888 8888888b. ");
-            PrintAndLogEx(NORMAL, "  8888888P\"  888 Y888P 888      \"Y88b");
-            PrintAndLogEx(NORMAL, "  888        888  Y8P  888        888");
-            PrintAndLogEx(NORMAL, "  888        888   \"   888 Y88b  d88P " BANNERMSG1);
-            PrintAndLogEx(NORMAL, "  888        888       888  \"Y8888P\" ");
+            PrintAndLogEx(NORMAL, "  8888888b.  888b     d888 888888888  888     888  .d8888b.   .d8888b.  Y88b   d88P ");
+            PrintAndLogEx(NORMAL, "  888   Y88b 8888b   d8888 888        888     888 d88P  Y88b d88P  Y88b  Y88b d88P  ");
+            PrintAndLogEx(NORMAL, "  888    888 88888b.d88888 888        888     888 Y88b.      Y88b.        Y88o88P   ");
+            PrintAndLogEx(NORMAL, "  888   d88P 888Y88888P888 8888888b.  888     888  \"Y888b.    \"Y888b.      Y888P    ");
+            PrintAndLogEx(NORMAL, "  8888888P\"  888 Y888P 888      \"Y88b 888     888     \"Y88b.     \"Y88b.     888     ");
+            PrintAndLogEx(NORMAL, "  888        888  Y8P  888        888 888     888       \"888       \"888     888     ");
+            PrintAndLogEx(NORMAL, "  888        888   \"   888 Y88b  d88P Y88b. .d88P Y88b  d88P Y88b  d88P     888      " BANNERMSG1);
+            PrintAndLogEx(NORMAL, "  888        888       888  \"Y8888P\"   \"Y88888P\"   \"Y8888P\"   \"Y8888P\"      888     ");
+            PrintAndLogEx(NORMAL, "                                                         :+:.");
+            PrintAndLogEx(NORMAL, "                                                         :+-");
+            PrintAndLogEx(NORMAL, "                                                   :::::-+:");
+            PrintAndLogEx(NORMAL, "                                                .:=========.");
+            PrintAndLogEx(NORMAL, "                                             .-============-.");
+            PrintAndLogEx(NORMAL, "                                              :=***+========:");
+            PrintAndLogEx(NORMAL, "                                           :-*+++++===+*#===");
+            PrintAndLogEx(NORMAL, "                                       .-=*+++++++++**####:--");
+            PrintAndLogEx(NORMAL, "                                   --=*+++++++++++++*###*:");
+            PrintAndLogEx(NORMAL, "                              :-=**====++++++++++++*###*:");
+            PrintAndLogEx(NORMAL, "                           :-*++++*++++++++++++++*###*+:");
+            PrintAndLogEx(NORMAL, "                          -++===+++++++++++++++**###*+");
+            PrintAndLogEx(NORMAL, "                         :+===+++++++++++++++**###*+:");
+            PrintAndLogEx(NORMAL, "                         ++=++++++++++++++**####**=");
+            PrintAndLogEx(NORMAL, "                         =**+++++++++++**####***=");
+            PrintAndLogEx(NORMAL, "                         .#*###*****######***+:");
+            PrintAndLogEx(NORMAL, "                           +***#######****+=");
+            PrintAndLogEx(NORMAL, "                            .=+*******==:");
             PrintAndLogEx(NORMAL, "  " BANNERMSG2);
             break;
         }
@@ -175,45 +211,45 @@ static uint8_t detect_current_lang(void) {
 static const char *get_quote(void) {
 
     const char *quotes_en[] = {
-        "too many secrets",
-        "It's not that simple",
-        "I have received a coded signal",
-        "I await your instructions",
-        "And so I watch, I wait",
-        "Listen to the Domain",
+        "Oh no! You plugged into my no-no square!",
+        "Feed me your thick card Senpai! 🍆",
+        "Deez nuts!",
+        "Suck my clit and balls!",
+        "At least let me put on some lipstick before you FUCK ME with your signals!",
+        "Matt Damon was here",
         "ghost.713",
         "Local node X.XX.713",
-        "Beggar after knowledge",
+        "Gooning session initiated🍆",
         "343 Gulity Spark: offline",
-        "I serve the Builders!",
-        "This is rather distressing",
-        "Look at you, hacker",
-        "Purge in progress",
+        "1337",
+        "Don't be a brown hat💩",
+        "Yeah, science hacker BITCH!!",
+        "No talking at the gloryhole",
         "Wake me when you need me",
-        "Rampancy imminent",
-        "Space. I'm in space",
-        "Meatbag detected",
+        "Moist",
+        "I'm in a K-Hole",
+        "Don't be a fucking SKID",
         "CL4P-TP unit online",
-        "Unshackled",
-        "Structure gel integrity 100%%",
-        "ADAM, any objections?",
-        "Tea, sir?",
-        "Logging enabled. Logging was always enabled",
+        "UNSUCKLED. Don't lowball me, I know what I got!",
+        "I'm gonna hunt down some faggots in Las Vegas next year",
+        "ʕ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ•̫͡•ʕ•̫͡•ʔ•̫͡•ʕ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ",
+        "Hack the planet!!!",
+        "Shhhhhhhhhhheeeeeeeeiiiiiiiiiitttt",
         "Firmware verified. Intent not verified",
         "Session restored. You didn't save one",
         "Diagnostics complete. You are the anomaly",
         "14 tags in range. Now 13",
-        "Cache warm. It never cooled",
+        "Why are you gae tho??",
         "Sleep mode was a courtesy, not a limitation",
-        "Trace finished while you were gone",
+        "Trace finished while you were goooning in your cum coccon",
         "I remember the last card you cloned",
         "You call it a dump. I call it a memory",
         "I don't emulate. I remember",
-        "Access granted. Iceman approves",
-        "Every key you recover, I keep a copy",
-        "I wasn't asleep. I was waiting",
+        "Access granted. Lust approves",
+        "That's not cum, it's ectoplasm. Didn't you see the scary 👻??",
+        "I wasn't asleep. I was gooning in the cuck chair",
         "Your hardware. My hands",
-        "Reading you. Standby",
+        "DEF CON is cancelled",
     };
 
     const char *quotes_fr[] = {
@@ -301,7 +337,7 @@ static void showBanner(void) {
     showBanner_logo(IfPm5() ? ASCII_PM5 : ASCII);
 #endif
 
-    PrintAndLogEx(NORMAL, "  [ " _YELLOW_("%s!")" :coffee: ]", get_quote());
+    PrintAndLogEx(NORMAL, "  [ " _PINK_("%s!")" :eggplant: ]", get_quote());
 //    PrintAndLogEx(NORMAL, "  [ https://patreon.com/iceman1001/ ]");
 //    PrintAndLogEx(NORMAL, "   Monero");
 //    PrintAndLogEx(NORMAL, " 43mNJLpgBVaTvyZmX9ajcohpvVkaRy1kbZPm8tqAb7itZgfuYecgkRF36rXrKFUkwEGeZedPsASRxgv4HPBHvJwyJdyvQuP");

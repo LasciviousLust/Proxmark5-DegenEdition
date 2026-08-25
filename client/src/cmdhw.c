@@ -57,10 +57,10 @@ static void lookup_chipid_short(uint32_t iChipID, uint32_t mem_used, uint32_t fl
     // AT32 (PM5): the chip id is an ARM DBGMCU IDCODE, not an Atmel CIDR, so the
     // AT91 decode below does not apply (it would print "Unknown" and a bogus flash
     // size). Report the MCU and use the real flash size the device reported.
-    if (IfPm5()) {
-        PrintAndLogEx(NORMAL, "    MCU....... " _YELLOW_("%s"), "AT32F437");
+        if (IfPm5()) {
+        PrintAndLogEx(NORMAL, "    MCU....... " _PINK_("%s"), "AT32F437");
         uint32_t mem_kb = flash_size / 1024;
-        PrintAndLogEx(NORMAL, "    Memory.... " _YELLOW_("%u") " KB ( " _YELLOW_("%2.0f%%") " used )"
+        PrintAndLogEx(NORMAL, "    Memory.... " _PINK_("%u") " KB ( " _PINK_("%2.0f%%") " used )"
                       , mem_kb
                       , mem_kb == 0 ? 0.0f : (float)mem_used / (mem_kb * 1024) * 100
                      );
@@ -2183,8 +2183,8 @@ int CmdHW(const char *Cmd) {
 
 void pm3_version_short(void) {
     //    PrintAndLogEx(NORMAL, "  [ " _CYAN_("Proxmark3 RFID instrument") " ]");
-    if (IfPm5()) {
-        PrintAndLogEx(NORMAL, "  [ " _CYAN_(_URL_("https://github.com/RfidResearchGroup/proxmark3", "Proxmark5")) " ]");
+        if (IfPm5()) {
+        PrintAndLogEx(NORMAL, "  [ " _URL_("https://github.com/RfidResearchGroup/proxmark3", _PINK_("Proxmark5 ") _PURPLE_("Degen Edition\xc2\xa9")) " ]");
     } else {
         PrintAndLogEx(NORMAL, "  [ " _CYAN_(_URL_("https://github.com/RfidResearchGroup/proxmark3", "Proxmark3")) " ]");
     }
@@ -2217,7 +2217,7 @@ void pm3_version_short(void) {
             lookup_chipid_short(payload->id, payload->section_size, flash_size);
 
             if (IfPm5()) {
-                PrintAndLogEx(NORMAL, "    Target.... %s", _YELLOW_("PM5"));
+                PrintAndLogEx(NORMAL, "    Target.... %s", _PINK_("PM5"));
             } else if (IfPm3Rdv4Fw()) {
 
                 // validate signature data

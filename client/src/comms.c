@@ -923,7 +923,7 @@ int TestProxmark(pm3_device_t *dev) {
     bool is_bt_conn = (memcmp(g_conn.serial_port_name, "bt:", 3) == 0);
     bool is_udp_conn = (g_conn.send_via_ip == PM3_UDPv4 || g_conn.send_via_ip == PM3_UDPv6);
 
-    PrintAndLogEx(SUCCESS, "Communicating with PM3 over %s%s%s%s",
+    PrintAndLogEx(SUCCESS, "Communicating with PM5 over %s%s%s%s",
                   (g_conn.send_via_fpc_usart) ? _GREEN_("FPC UART") : _GREEN_("USB-CDC"),
                   (is_tcp_conn) ? " over " _GREEN_("TCP") : "",
                   (is_bt_conn) ? " over " _GREEN_("BT") : "",

@@ -86,6 +86,13 @@
 #define _BRIGHT_CYAN_(s)    ANSI_BRIGHT_CYAN s AEND
 #define _BRIGHT_WHITE_(s)   ANSI_BRIGHT_WHITE s AEND
 
+// custom truecolor additions
+#define ANSI_PINK           "\x1b[38;2;255;105;180m"   // hot pink
+#define ANSI_PURPLE         "\x1b[38;2;148;0;211m"    // dark violet
+
+#define _PINK_(s)           ANSI_PINK s AEND
+#define _PURPLE_(s)         ANSI_PURPLE s AEND
+
 #define _BACK_BLACK_(s)     "\x1b[40m" s AEND
 #define _BACK_RED_(s)       "\x1b[41m" s AEND
 #define _BACK_GREEN_(s)     "\x1b[42m" s AEND
