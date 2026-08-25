@@ -1,4 +1,6 @@
-# Iceman Fork - Proxmark
+# Degen Edition Fork - Proxmark
+
+This is a very NSFW degen themed fork and is a work in progress. 
 
 The Proxmark is the swiss-army tool of RFID, allowing for interactions with the vast majority of RFID tags on a global scale. Originally built by Jonathan Westhues, the device is now the goto tool for RFID Analysis for the enthusiast.
 
